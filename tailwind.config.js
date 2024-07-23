@@ -13,8 +13,8 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        lg: "1200px",
-        xl: "1300px",
+        lg: "1100px",
+        xl: "1200px",
       },
     },
     extend: {
@@ -23,7 +23,7 @@ module.exports = {
         fredoka: ["Fredoka", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
-      colors:{
+      colors: {
         primary: "#070148",
         linearText1: "#6D28D9",
         linearText2: "#E127FF",

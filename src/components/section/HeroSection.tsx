@@ -25,10 +25,10 @@ export default function HeroSection() {
         <img
           src="./heroSection.png"
           alt="hero section image"
-          className="absolute inset-0 -z-20 h-full w-full bg-cover bg-center"
+          className="absolute inset-0 -z-20 hidden h-full w-full bg-cover bg-center sm:block"
         />
         {/* bacgrounde gradient */}
-        <div className="absolute inset-0 -z-10 h-full w-full rounded-[1.2rem] bg-gradient-to-bl from-linearHero2/50 via-linearHero3/50 via-[26%] to-linearHero4/20 to-100% lg:rounded-[2.35rem]"></div>
+        <div className="absolute inset-0 -z-10 h-full w-full rounded-[1.2rem] bg-gradient-to-bl from-linearHero2 via-linearHero3/80 via-[26%] to-linearHero4/90 to-100% sm:from-linearHero2/50 sm:via-linearHero3/50 sm:to-linearHero4/20 lg:rounded-[2.35rem]"></div>
         {/* hero button */}
         <div className="absolute -bottom-8 left-1/2 w-full max-w-fit -translate-x-1/2 text-white">
           <a href="#">
