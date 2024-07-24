@@ -26,7 +26,7 @@ export default function TimeEventSection() {
 
     return timeLeft;
   };
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
@@ -37,10 +37,9 @@ export default function TimeEventSection() {
   return (
     <section className="container pb-32 font-inter">
       <div className="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-16 lg:grid-cols-4">
-        <DateBox date={timeLeft.days || 0} desc={"days"} />
-        <DateBox date={timeLeft.hours || 0} desc={"hours"} />
-        <DateBox date={timeLeft.minutes || 0} desc={"minutes"} />
-        <DateBox date={timeLeft.seconds || 0} desc={"seconds"} />
+        {Object.entries(timeLeft).map(([key, value]) => (
+          <DateBox key={key} date={value} desc={key} />
+        ))}
       </div>
     </section>
   );
