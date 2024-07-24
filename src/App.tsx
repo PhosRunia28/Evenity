@@ -3,6 +3,7 @@ import ExploreSection from "./components/section/ExploreSection";
 import Header from "./components/section/Header";
 import HeroSection from "./components/section/HeroSection";
 import RecapVideoEvent from "./components/section/RecapVideoEvent";
+import TimeEventSection from "./components/section/TimeEventSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutSection />
       <ExploreSection />
       <RecapVideoEvent />
+      <TimeEventSection />
     </>
   );
 }

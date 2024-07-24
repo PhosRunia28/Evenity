@@ -8,7 +8,7 @@ export default function RecapVideoEvent() {
   const [openVideo, setOpenVideo] = useState(false);
   return (
     <section className="container pb-32 font-fredoka">
-      <TitleSection title="RECAP EVENT 2024" />
+      <TitleSection title={`RECAP EVENT ${EventTime.getFullYear()}`} />
       <div className="relative flex h-full min-h-[600px] w-full flex-col gap-6 rounded-2xl bg-black px-4 py-10 text-white sm:min-h-[500px] sm:px-10 md:rounded-[4rem] lg:px-14 lg:py-16">
         {/* video */}
         {openVideo && (
