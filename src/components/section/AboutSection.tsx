@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { eventsInTheLastYear } from "@/data/AboutEvent";
 
 export default function AboutSection() {
   return (
@@ -31,7 +32,7 @@ export default function AboutSection() {
             className="mx-auto w-full max-w-xs rounded-lg bg-cover bg-center sm:mx-0 sm:-mt-48 sm:ml-60 lg:hidden xl:block xl:max-w-[16rem]"
           />
           <div className="bottom-12 left-4 mx-auto w-full max-w-fit space-y-2 rounded-[1.5rem] border border-gray-500/40 p-5 text-center shadow-lg sm:absolute lg:static xl:absolute xl:bottom-4">
-            <h4 className="text-5xl font-medium">46+</h4>
+            <h4 className="text-5xl font-medium">{eventsInTheLastYear}+</h4>
             <p className="text-sm font-medium text-gray-500">
               Events In The Last Year
             </p>
