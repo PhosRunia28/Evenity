@@ -1,8 +1,9 @@
-import EventSchedule from "./components/common/EventSchedule";
 import AboutSection from "./components/section/AboutSection";
+import EventSchedule from "./components/section/EventSchedule";
 import ExploreSection from "./components/section/ExploreSection";
 import Header from "./components/section/Header";
 import HeroSection from "./components/section/HeroSection";
+import PartnerSection from "./components/section/PartnerSection";
 import RecapVideoEvent from "./components/section/RecapVideoEvent";
 import TimeEventSection from "./components/section/TimeEventSection";
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <RecapVideoEvent />
       <TimeEventSection />
       <EventSchedule />
+      <PartnerSection />
     </>
   );
 }

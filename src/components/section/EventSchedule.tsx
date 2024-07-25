@@ -1,7 +1,7 @@
 import { eventSchedule } from "@/data/EventScheduleData";
+import CardEvent from "../common/CardEvent";
+import TitleSection from "../common/TitleSection";
 import { Button } from "../ui/button";
-import CardEvent from "./CardEvent";
-import TitleSection from "./TitleSection";
 
 export default function EventSchedule() {
   const sortEventByDate = eventSchedule.sort(
