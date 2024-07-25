@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 -z-10 h-full w-full rounded-[1.2rem] bg-gradient-to-bl from-linearHero2 via-linearHero3/80 via-[26%] to-linearHero4/90 to-100% sm:from-linearHero2/50 sm:via-linearHero3/50 sm:to-linearHero4/20 lg:rounded-[2.35rem]"></div>
         {/* hero button */}
         <div className="absolute -bottom-8 left-1/2 w-full max-w-fit -translate-x-1/2 text-white">
-          <a href="#">
+          <a href="#event">
             <Button className="rounded-xl border border-primary px-12 py-8 font-rubik text-base font-medium hover:bg-white hover:text-primary">
               Explore Event
             </Button>
