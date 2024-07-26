@@ -1,6 +1,7 @@
 import AboutSection from "./components/section/AboutSection";
 import EventSchedule from "./components/section/EventSchedule";
 import ExploreSection from "./components/section/ExploreSection";
+import Footer from "./components/section/Footer";
 import Header from "./components/section/Header";
 import HeroSection from "./components/section/HeroSection";
 import PartnerSection from "./components/section/PartnerSection";
@@ -17,6 +18,7 @@ function App() {
       <TimeEventSection />
       <EventSchedule />
       <PartnerSection />
+      <Footer />
     </>
   );
 }
