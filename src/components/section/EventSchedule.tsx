@@ -13,7 +13,7 @@ export default function EventSchedule() {
         <TitleSection title="EVENT SCHEDULE" />
         <div className="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {sortEventByDate.map((card, index) => (
-            <CardEvent card={card} key={index} />
+            <CardEvent card={card} key={index} index={index} />
           ))}
         </div>
         <div className="mx-auto w-full max-w-fit pt-20">

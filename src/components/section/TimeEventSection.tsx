@@ -36,9 +36,9 @@ export default function TimeEventSection() {
   }, []);
   return (
     <section className="container pb-32 font-inter">
-      <div className="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-16 lg:grid-cols-4">
-        {Object.entries(timeLeft).map(([key, value]) => (
-          <DateBox key={key} date={value} desc={key} />
+      <div className="grid grid-cols-1 items-center gap-10 overflow-hidden sm:grid-cols-2 sm:gap-16 lg:grid-cols-4">
+        {Object.entries(timeLeft).map(([key, value], index) => (
+          <DateBox key={key} date={value} desc={key} index={index} />
         ))}
       </div>
     </section>

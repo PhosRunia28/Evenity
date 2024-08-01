@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { formatDate, formatTime } from "@/lib/utils";
+import { motion } from "framer-motion";
 type CardData = {
   image: string;
   date: Date;
@@ -12,10 +13,32 @@ type CardData = {
 };
 type Props = {
   card: CardData;
+  index: number;
 };
-export default function CardEvent({ card }: Props) {
+export default function CardEvent({ card, index }: Props) {
+  const MotionCard = motion(Card);
+  const cardEventVariants = {
+    hidden: {
+      opacity: 0,
+      y: "-100px",
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.1 * index,
+      },
+    },
+  };
   return (
-    <Card className="w-full border-none shadow-none">
+    <MotionCard
+      className="w-full border-none shadow-none"
+      whileInView="visible"
+      initial="hidden"
+      viewport={{ margin: "-300px", once: true }}
+      variants={cardEventVariants}
+      transition={{ duration: 1 }}
+    >
       <CardHeader className="p-0">
         <a href="#">
           <img
@@ -42,6 +65,6 @@ export default function CardEvent({ card }: Props) {
         </a>
         <p className="text-xs leading-4 text-gray-500">{card.description}</p>
       </CardContent>
-    </Card>
+    </MotionCard>
   );
 }
